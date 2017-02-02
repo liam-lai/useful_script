@@ -1,5 +1,4 @@
 git clone URL
-----
 
 ### commit new change
 
@@ -13,13 +12,23 @@ git push
 * b
 
 ### update latest version
-git pull
 
-### git New Branch:
+```bash
+git pull
+```
+
+### git New Branch
+
+```bash
 git branch new_branch
 git checkout new_branch
 git push origin new_branch
+```
 
+### Reset current branch
 
-### Reset current branch 
+```bash
 git reset --hard <tag/branch/commit id>
+```
+
+> lai says
