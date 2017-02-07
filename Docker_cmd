@@ -1,8 +1,0 @@
-# Build an image from dockerfile
-# docker build -t name:tag dockerfile_dir 
-docker build -t New_image:v1 docker_golang_1.7 
-
-
-# 
-
-#
