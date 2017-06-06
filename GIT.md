@@ -40,6 +40,8 @@ http://gogojimmy.net/2012/01/21/how-to-use-git-2-basic-usage-and-worflow/
 git reset --hard <tag/branch/commit id>
 ```
 
-
-
-> lai says
+### Rebase and squash commit
+(5 commit -> 1 commit)
+```bash
+git rebase -i HEAD~5
+```
