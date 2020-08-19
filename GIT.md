@@ -45,3 +45,14 @@ git reset --hard <tag/branch/commit id>
 ```bash
 git rebase -i HEAD~5
 ```
+
+### undo commit but keep the change
+```
+    git reset --soft HEAD~1
+```
+
+### sync with remote repo
+```
+git fetch origin
+git reset --hard origin/master
+```
