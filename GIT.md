@@ -56,3 +56,19 @@ git rebase -i HEAD~5
 git fetch origin
 git reset --hard origin/master
 ```
+
+### change commit change author and committer
+```
+git filter-branch --env-filter '
+if [ "$GIT_AUTHOR_EMAIL" = "old author email" ];
+then
+    GIT_AUTHOR_NAME="new name";
+    GIT_AUTHOR_EMAIL="new email";
+fi
+if [ "$GIT_COMMITTER_EMAIL" = "old author email" ];
+then
+    GIT_COMMITTER_NAME="new name";
+    GIT_COMMITTER_EMAIL="new email";
+fi
+' -- --all
+```
