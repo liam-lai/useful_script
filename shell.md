@@ -1,6 +1,6 @@
 # SHELL
 
-### aws 
+### ssh menu
 
 ```
 brew install pick
