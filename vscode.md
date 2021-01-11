@@ -25,3 +25,8 @@ read:user, repo, user:email, write:discussion
 ```
 
 4. reopen vscode
+
+# Hot Key
+
+* mini map: Hit command + shift + p and select View: Toggle Minimap
+* open terminal Ctrl+`
