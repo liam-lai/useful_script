@@ -126,3 +126,14 @@ CREATE TRIGGER t_if_modified_trg
 AFTER INSERT OR UPDATE OR DELETE ON table_name
 FOR EACH ROW EXECUTE PROCEDURE audit.if_modified_func();
 ```
+
+Result
+```
+
+ schema_name |   table_name   | user_name |         action_tstamp         | action |  original_data   |     new_data     |                   query
+-------------+----------------+-----------+-------------------------------+--------+------------------+------------------+-------------------------------------------
+ public      | source_meeting | digital   | 2021-09-22 14:51:34.833251+10 | I      |                  | (1,,,,,,,,,,,,,) | insert into source_meeting(id) values(1);
+ public      | source_meeting | digital   | 2021-09-22 14:52:44.192861+10 | D      | (1,,,,,,,,,,,,,) |                  | delete FROM source_meeting where id = 1  +
+             |                |           |                               |        |                  |                  | ;
+(2 rows)
+```
